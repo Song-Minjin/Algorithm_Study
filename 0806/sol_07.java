@@ -1,9 +1,13 @@
 class Solution {
     public int solution(int[] absolutes, boolean[] signs) {
         int answer = 0;
+        
+        // absolutes의 길이만큼 반복
         for(int i=0; i<absolutes.length; i++){
+            // 만약 signs의 값이 true라면 answer에 더하기
             if(signs[i] == true)
                 answer += absolutes[i];
+            // signs의 값이 false라면 answer에 빼기
             else
                 answer -= absolutes[i];
         }
