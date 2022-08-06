@@ -1,7 +1,10 @@
 class Solution {
     public int solution(int[] numbers) {
+        
+        // 범위의 값이 정해져 있기 때문에 1~10까지 더한 45를 answer에 할당
         int answer = 45;
         
+        // numbers의 길이만큼 for문을 돌아 numbers안에 있는 값을 빼기
         for(int i=0; i<numbers.length; i++) {
             answer -= numbers[i];
         }
