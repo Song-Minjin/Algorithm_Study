@@ -2,7 +2,7 @@ class Solution {
     public String solution(String s) {
         String answer = "";
 
-        String[] s_list = s.split(" ");
+        String[] s_list = s.split(" ", -1);
         int s_cnt = 0;
         for (String str : s_list) {
             String str_tmp = "";
